@@ -47,18 +47,8 @@ Hope everyone who see this enjoy it :)
 
 
 ### License
-**Status:** Required.
+**Status:** MIT
 
-**Requirements:**
-- State license full name or identifier, as listed on the  [SPDX](https://spdx.org/licenses/) license list. For unlicensed repositories, add `UNLICENSED`. For more details, add `SEE LICENSE IN <filename>` and link to the license file. (These requirements were adapted from [npm](https://docs.npmjs.com/files/package.json#license)).
-- State license owner.
-- Must be last section.
 
-**Suggestions:**
-- Link to longer License file in local repository.
 
-## Definitions
 
-_These definitions are provided to clarify any terms used above._
-
-- **Documentation repositories**: Repositories without any functional code. For instance, [RichardLitt/knowledge](https://github.com/RichardLitt/knowledge).
