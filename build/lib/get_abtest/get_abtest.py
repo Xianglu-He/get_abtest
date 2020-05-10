@@ -1,13 +1,31 @@
+#!/usr/bin/env python
+# coding: utf-8
 
-def get_insights(file):
+# In[44]:
+
+
+def get_insight(file):
+    file_check = str(file)
+    import re
     import pandas as pd
-    data = pd.read_csv(file)
-    print("This data has",len(data.columns),"columns")
-    print("Name includes:",data.columns)
-    print("It has ",data.isnull().sum().sum(),"missing values")
-    print("The missing value columns is",data.columns[data.isnull().any()].tolist())
-    print(data.describe())
+    if bool(re.findall('csv',file_check)) is True:
+        data = pd.read_csv(file)
+        print("This data has",len(data.columns),"columns")
+        print("Name includes:",data.columns)
+        print("It has ",data.isnull().sum().sum(),"missing values")
+        print("The missing value columns is",data.columns[data.isnull().any()].tolist())
+        print(data.describe())
+    elif bool(re.findall('xlsx',file_check)) is True:
+        data = pd.read_excel(file)
+        print("This data has",len(data.columns),"columns")
+        print("Name includes:",data.columns)
+        print("It has ",data.isnull().sum().sum(),"missing values")
+        print("The missing value columns is",data.columns[data.isnull().any()].tolist())
+        print(data.describe())
+    else: print("please check your input format")
 
+
+# In[3]:
 
 
 def pre_test(data,col,col2):
@@ -36,6 +54,9 @@ def pre_test(data,col,col2):
                 else:
                     print('They are different')
         else: pass
+
+
+# In[4]:
 
 
 def final_test(data,col,col2):

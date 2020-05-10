@@ -1,12 +1,19 @@
 Metadata-Version: 2.1
 Name: get-abtest
-Version: 0.1.0
+Version: 0.1.1
 Summary: My short description for my project.
 Home-page: https://github.com/me/myproject
 Author: Xianglu He
 Author-email: xlhe@ucdavis.edu
 License: MIT
-Description: My short description for my project.
+Description: 
+        # get_abtest
+        Hello everyone,
+        this is a customized ab test frame work package
+        For time to time, I realize that there is a need to run hypothsis test on ab testing experiment
+        So I tried to build a python modules to automative the work a little bit
+        Hope everyone who see this enjoy it :) 
+        
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python
