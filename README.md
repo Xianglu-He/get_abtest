@@ -31,19 +31,13 @@ For time to time, I realize that there is a need to run hypothsis test on ab tes
 So I tried to build a python modules to automative the work a little bit
 Hope everyone who see this enjoy it :) 
 
+**Use case:**
+get_insight(file): input the file name, please make sure the file is under same dictionary as the python file
+pre_test(data,col,col2): run the pre_test baseline comparison between control and experiment group. data is the data set, col is control or experiment identify col (please note 0 is control and 1 is experiment); col2 is the final outcome of the A/B Test
+final_test(data,col,col2):variable definiation stay the same. The output of this function is the evluation of A/B Test final outcome and a simple conclusion. 
+
 ### Install
-**Status:** Required by default, optional for [documentation repositories](#definitions).
-
-**Requirements:**
-- Code block illustrating how to install.
-
-**Subsections:**
-- `Dependencies`. Required if there are unusual dependencies or dependencies that must be manually installed.
-
-**Suggestions:**
-- Link to prerequisite sites for programming language: [npmjs](https://npmjs.com), [godocs](https://godoc.org), etc.
-- Include any system-specific information needed for installation.
-- An `Updating` section would be useful for most packages, if there are multiple versions which the user may interface with.
+**Status:** pip install get_abtest
 
 
 ### License
